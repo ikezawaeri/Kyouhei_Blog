@@ -8,7 +8,7 @@
     <div>
         <p>ピックアップ</p>
         <p>SUPPLEMENT</p>
-        
+        <p>test</p>
     </div>
 
  <section id="content">
