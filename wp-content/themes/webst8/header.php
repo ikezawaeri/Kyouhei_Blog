@@ -11,7 +11,7 @@
 	<!-- bootstrapに名前を付けてjQueryの後にbootstrapを読み込む -->
 	<?php wp_enqueue_script('bootstrap-js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',array('jquery')); ?>
 	<?php wp_head(); ?><!-- header.phpの</head>直前に入れる。これを忘れるとプラグインが動かない -->
-	<!-- テスト -->
+
 </head>
 
 <body>
@@ -26,12 +26,15 @@
 		    </button>
 		  </div>
 		  <div id="bs-navbar-collapse-1" class="collapse navbar-collapse">
-		    <ul class="nav navbar-nav">
-		      <li><a href="#">HOME</a></li>
-		      <li><a href="#">PROFILE</a></li>
-					<li><a href="#">BLOG</a></li>
-		      <li><a href="#">CONTACT</a></li>
-		    </ul>
+		  <?php
+			$args = array(
+				'menu_class' => 'nav navbar-nav', //menu_classは、メニューを構成する ul要素に適用するクラス名を指定するオプション
+				'container' => false, //containerは、ulをラップするか、ラップする場合は何でラップするかを指定するオプション
+			);
+			wp_nav_menu($args);
+			?>
 		  </div>
 		</nav>
 	</header>
+	
+	

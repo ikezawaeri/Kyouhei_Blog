@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<!--■■日付別の投稿一覧を表示するテンプレート-->
+<!--ブラウザに書きを入力すると表示
+http://localhost/wp01/西暦で任意の日付-->
+
+<!DOCTYPE html>
 <html lang="ja">
 <?php get_header(); ?><!-- ヘッダーのファイルを読み込む -->
 
@@ -11,24 +15,32 @@
  <section id="content">
 	 <div id="content-wrap" class="container">
          
-         <!--固定ページの中身-->
  		<div id="main" class="col-md-9">
+            <h1>記事一覧</h1>
+            <hr>
  			 <?php 
               if ( have_posts() ) :
                   while ( have_posts() ) : the_post();
               ?><!--記事の中身があるか確認-->
             
-                  <h1><?php the_title(); ?></h1><!--記事のタイトルを出力-->
-                  <section>
-                    <?php the_content(); ?><!--記事の本文を出力-->
-                  </section>
+          <h2>
+            <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+              <!--get_permalink();　→　記事のパーマリンク(URL)を出力する。whileループ内で使用-->
+              
+          </h2>
+          <section>
+            <p>作成日時：<?php the_time('Y年n月j日'); ?></p>
+            <a href="<?php echo get_permalink(); ?>"><?php the_excerpt(); ?></a>
+            <!--the_time('Y年n月j日');	　日付を出力する関数。whileループ内で使用します。-->
+            <!--the_excerpt()	記事本文の抜粋を出力する関数。whileループ内で使用します。-->
+          </section>
+          <hr>
             
               <?php 
                   endwhile;
               endif;
               ?><!--記事の中身があるか確認-->
- 		</div>
-         <!--固定ページの中身-->
+
          
  		<div id="sidebar" class="col-md-3">
 			<?php get_sidebar(); ?><!-- サイドバーを読み込み -->
