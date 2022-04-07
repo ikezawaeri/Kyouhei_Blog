@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* 共通 */
+html{
+    font-size: 62.5%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header .wrapper,#about{
+    width: 80%;
+    margin: 0 auto;
+}
+#first-view .wrapper{
+    width: 63%;
+    margin: 0 auto;
+}
+.white,.white a{
+    color: white;
+}
+
+
+/* ヘッダー */
+header {
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+header .wrapper{
+    display: flex;
+}
+header img{
+    margin: auto 0;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.header-nav li:nth-child(2){
+    position: relative;
+}
+header img{
+    width: auto;
+    height: 40px;
+    vertical-align: middle;
+}
+header nav{
+    margin-left: auto;
+}
+header a{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+header .nav{
+    height: 90px;
+    padding: 35px 37px;
+}
+.sub{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.sub li{
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 0;
+}
+.sub a{
+    font-size: 1.3rem;
+}
+header .button{
+    position: relative;
+    width: 242px;
+}
+header .button::before{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #EC5E1E 0%, #D1163C 100%);
+    transform: skewX(-25deg);
+    padding: 45px 100px;
+    z-index: -1;
+}
+header .button a{
+    padding-top: 34px;
+    display: block;
+    height: 100%;
+}
+
+
+/* ファーストビュー */
+#first-view{
+    position: relative;
+    top: 90px;
+}
+#first-view img{
+    width: 100%;
+    height: 49%;
+}
+#first-view .content{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+}
+#first-view .font{
+    font-family: Futura, 'Century Gothic';
+    font-style: italic;
+    font-size: 9.2rem;
+    line-height: 8.2rem;
+    margin: 0;
+}
+#first-view h1{
+    margin: 0;
+    padding: 40px 0 10px 0;
+    font-size: 3.0rem;
+    letter-spacing: 0.1rem;
+    border-bottom: solid 3px white;
+}
+#first-view .text{
+    margin: 0;
+    padding: 15px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3.0rem;
+    letter-spacing: 0.1rem;
+}
+#first-view .background{
+    position: absolute;
+    width: 100%;
+    height: 52%;
+    background-color: #D1163C;
+    transform: skewY(-7deg);
+    top: 85%;
+}
+
+
+/* ABOUT */
+#about{
+    position: relative;
+    height: 625px;
+}
+#about .wrapper{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+#about .title{
+    width: 12%;
+    font-size: 1.8rem;
+    border-bottom: solid 2px white;
+}
