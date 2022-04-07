@@ -45,7 +45,9 @@ http://localhost/wp01/西暦で任意の日付-->
  		<div id="sidebar" class="col-md-3">
 			<?php get_sidebar(); ?><!-- サイドバーを読み込み -->
  		</div>
- 	</div>
+ 	  </div>
+         
+     </div>
  </section>
 
  <?php get_footer(); ?><!-- フッターのファイルを読み込む -->

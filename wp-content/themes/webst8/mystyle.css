@@ -1,21 +1,121 @@
 @charset "UTF-8";
-body{  font-size: 16px; }
+body{  font-size: 16px;
+background-color: #ddd;
+}
 h1{ font-size:28px; font-weight: bold;}
-h2{ font-size:20px;}
+h2{ font-size:23px;}
 h3{ font-size:18px;}
+h4{ font-size:16px;}
 img{ max-width:100%;  }
 #content{
-  background-color: #ddd;
   padding-top:20px;
   padding-bottom:20px;
+    width: 90%;
+    margin: auto;
 }
-#content-wrap{
-  background-color: white;
-  box-shadow: 2px 2px 2px rgba(0,0,0,.3);
-}
-#sidebar{ text-align: center;}
 footer{ background-color: #222; }
 footer p{
   padding:15px 0;
   color: white;
+}
+
+
+/*■index のCSS*/
+/*ファーストビュー*/
+.top-cover {
+    padding-bottom: 20px;
+}
+.top-cover-inner {
+    width: 90%;
+    margin: auto;
+}
+a.categories {
+    font-weight: bold;
+    color: white;
+}
+.date-top {
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.entry-title {
+    color: white;
+}
+
+/*ファーストビュー以降（id="content"）の各タイトルなど*/
+.tittle-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.tittle-section h2{
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/*サイドバーとのカラム分け
+（id="content-wrap"）*/
+#latest{
+    display: flex;
+    width: calc(100% / 3 * 2  - 1%) ;
+}
+#sidebar{
+    text-align: center;
+    width: calc(100% / 3 - 1%) ;
+    margin-left: 0.5%;
+}
+
+/*最新記事（id="latest"）*/
+#content-wrap {
+    width: 100%;
+}
+#latest{
+  display: flex;
+}
+#latest ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+#latest ul li{
+    width: 49%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: red;
+}
+#latest ul li:nth-child(odd){
+    margin-right: 1%;
+}
+
+
+
+
+
+
+.wrapper-latest {
+    position: relative;
+    width: 100%;
+    
+}
+.wrapper-latest:before {
+    content:"";
+    display: block;
+    padding-top: 75%;  /*    高さを幅の75%に固定 */
+}
+.content-latest{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("images/pickup.jpg");
+    background-size: cover;
+}
+
+.img-latest {
+    
 }

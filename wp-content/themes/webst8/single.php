@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<!-- 投稿用のテンプレート -->
+<!DOCTYPE html>
 <html lang="ja">
 <?php get_header(); ?><!-- ヘッダーのファイルを読み込む -->
 
