@@ -32,7 +32,7 @@ define( 'DB_NAME', 'wp01db' );
 define( 'DB_USER', 'root' );
 
 /** MySQL データベースのパスワード */
-define( 'DB_PASSWORD', 'twilight8430' );
+define( 'DB_PASSWORD', 'root' );
 
 /** MySQL のホスト名 */
 define( 'DB_HOST', 'localhost' );
