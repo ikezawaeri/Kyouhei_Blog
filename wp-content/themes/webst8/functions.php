@@ -4,6 +4,14 @@
 function webst8_setup() {
    //ここに関数の中身を記述します。
    add_theme_support( 'post-thumbnails' ); //post-thumbnails…アイキャッチ画像をON
+    
+    
+register_post_type(
+    'event',
+    // 'supports'に'thumbnail'を追記
+    array('supports' => array('title','editor','thumbnail'))
+);
+    
    add_theme_support( 'menus');  //メニュー機能をON
 }
 add_action( 'after_setup_theme', 'webst8_setup' );

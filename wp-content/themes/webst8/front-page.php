@@ -80,6 +80,13 @@ echo do_shortcode('[smartslider3 slider="2"]');
                   while ( have_posts() ) : the_post();
               ?><!--記事の中身があるか確認-->
             
+             <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('thumbnail'); ?>
+            <?php else : ?>
+                <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" width="100" height="100" alt="デフォルト画像" />
+            <?php endif ; ?>
+            <!--アイキャッチ画像を表示-->
+            
           <h2>
             <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
               <!--get_permalink();　→　記事のパーマリンク(URL)を出力する。whileループ内で使用-->
