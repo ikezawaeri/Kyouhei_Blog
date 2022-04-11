@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+
+
+/* 共通 */
+html{
+    font-size: 62.5%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header .wrapper,#about{
+    width: 80%;
+    margin: 0 auto;
+}
+#first-view .wrapper{
+    width: 63%;
+    margin: 0 auto;
+}
+.white,.white a{
+    color: white;
+}
+
+
+/* ヘッダー */
+header {
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+header img{
+    width: auto;
+    height: 40px;
+    vertical-align: middle;
+}
+
+
+}
