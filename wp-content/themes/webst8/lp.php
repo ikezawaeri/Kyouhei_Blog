@@ -62,9 +62,9 @@
                 <h3>瀬川 恭平</h3>
                 <p>Kyouhei Segawa</p>
             </div>
-            <div>
+            <div class="profile">
                 <div>
-                    <div>
+                    <div class="career">
                         <p>経歴</p>
                         <ul>
                             <li>2015年 - 2018年</li>
@@ -79,20 +79,20 @@
                             <li>フリーのトレーナーとして活動</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="qualification">
                         <p>保有資格</p>
                         <ul>
                             <li>NSCA認定 パーソナルトレーナー(CPT)</li>
                             <li>中学・高等学校教諭一種免許状(保健体育)</li>
                         </ul>
-                        <div>
-                            <h2>BLOG</h2>
-                            <p>おすすめのトレーニング方法や、トレーニンググッズなどについてブログを書いています。</p>
-                        </div>
+                    </div>
+                    <div>
+                        <h2>BLOG</h2>
+                        <p>おすすめのトレーニング方法や、トレーニンググッズなどについてブログを書いています。</p>
                     </div>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="img">
+                    <img src="http://localhost/wp01/wp-content/uploads/2022/04/profile.jpg" alt="">
                 </div>
             </div>
         </div>
