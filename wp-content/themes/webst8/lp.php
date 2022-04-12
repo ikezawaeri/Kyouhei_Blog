@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<?php
+/*
+Template Name: lpページ
+*/
+?>
+
 <html lang="ja">
 
 
@@ -6,12 +13,12 @@
     <title>Kyouhei Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="./css/sanitize.css">
-    <link rel="stylesheet" href="./css/lp.css" media="(min-width:1024px)">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sanitize.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lp.css" media="(min-width:1024px)">
     <link rel="stylesheet" href="./css/lpTablet.css">
     <link rel="stylesheet" href="./mobile.css" media="(min-width:320px)and(max-width:599px)">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/lp.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/lp.js"></script>
 </head>
 
 
@@ -19,7 +26,7 @@
 
     <header>
         <div class="wrapper">
-            <img src="./images/lp/logo.png" alt="Kyouhei Blog">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/lp/logo.png" alt="Kyouhei Blog">
             <nav>
                 <ul class="header-nav white">
                     <li><a href="" class="nav">ABOUT</a></li>
@@ -43,7 +50,7 @@
 
 
     <section id="first-view" class="white">
-        <img src="./images/lp/firstView.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/lp/firstView.png" alt="">
         <div class="content">
             <div class="wrapper">
                 <p class="font">Best<br>Evidence<br>Training</p>
@@ -62,9 +69,9 @@
                 <h3>瀬川 恭平</h3>
                 <p>Kyouhei Segawa</p>
             </div>
-            <div>
+            <div class="profile">
                 <div>
-                    <div>
+                    <div class="career">
                         <p>経歴</p>
                         <ul>
                             <li>2015年 - 2018年</li>
@@ -79,20 +86,20 @@
                             <li>フリーのトレーナーとして活動</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="qualification">
                         <p>保有資格</p>
                         <ul>
                             <li>NSCA認定 パーソナルトレーナー(CPT)</li>
                             <li>中学・高等学校教諭一種免許状(保健体育)</li>
                         </ul>
-                        <div>
-                            <h2>BLOG</h2>
-                            <p>おすすめのトレーニング方法や、トレーニンググッズなどについてブログを書いています。</p>
-                        </div>
+                    </div>
+                    <div>
+                        <h2>BLOG</h2>
+                        <p>おすすめのトレーニング方法や、トレーニンググッズなどについてブログを書いています。</p>
                     </div>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="img">
+                    <img src="http://localhost/wp01/wp-content/uploads/2022/04/profile.jpg" alt="">
                 </div>
             </div>
         </div>

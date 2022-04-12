@@ -164,3 +164,20 @@ header .button a{
     font-size: 1.8rem;
     border-bottom: solid 2px white;
 }
+.profile{
+    display: flex;
+    width: 100%;
+}
+.profile .img{
+    width: 30%;
+    margin:0 0 0 auto
+}
+.profile img{
+    width: 100%;
+}
+.career{
+    display: flex;
+}
+.qualification{
+    display: flex;
+}
