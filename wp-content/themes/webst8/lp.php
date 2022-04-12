@@ -67,12 +67,12 @@ Template Name: lpページ
     <section id="about">
         <div class="wrapper">
             <h2 class="title white">TRAINER</h2>
-            <div class="white">
+            <div class="name white">
                 <h3>瀬川 恭平</h3>
                 <p>Kyouhei Segawa</p>
             </div>
             <div class="profile">
-                <div>
+                <div class="inner">
                     <div class="career">
                         <p>経歴</p>
                         <ul>

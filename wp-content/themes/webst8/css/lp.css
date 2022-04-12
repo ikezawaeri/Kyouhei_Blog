@@ -145,7 +145,7 @@ header .button a{
     height: 52%;
     background-color: #D1163C;
     transform: skewY(-7deg);
-    top: 85%;
+    top: 80%;
 }
 
 
@@ -157,19 +157,30 @@ header .button a{
 #about .wrapper{
     position: absolute;
     width: 100%;
-    top: 25%;
+    top: 32%;
 }
 #about .title{
     width: 12%;
     font-size: 1.8rem;
     border-bottom: solid 2px white;
 }
+#about .name h3{
+    font-size: 4rem;
+    margin: 2% 0 0 0;
+}
+#about .name p{
+    font-size: 1.8rem;
+    margin: 0;
+}
 .profile{
     display: flex;
     width: 100%;
 }
+.profile .inner{
+    margin-top: 5%;
+}
 .profile .img{
-    width: 30%;
+    width: 28%;
     margin:0 0 0 auto
 }
 .profile img{
