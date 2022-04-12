@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<?php
+/*
+Template Name: lpページ
+*/
+?>
+
 <html lang="ja">
 
 
@@ -6,12 +13,12 @@
     <title>Kyouhei Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="./css/sanitize.css">
-    <link rel="stylesheet" href="./css/lp.css" media="(min-width:1024px)">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sanitize.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lp.css" media="(min-width:1024px)">
     <link rel="stylesheet" href="./css/lpTablet.css">
     <link rel="stylesheet" href="./mobile.css" media="(min-width:320px)and(max-width:599px)">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/lp.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/lp.js"></script>
 </head>
 
 
@@ -19,7 +26,7 @@
 
     <header>
         <div class="wrapper">
-            <img src="./images/lp/logo.png" alt="Kyouhei Blog">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/lp/logo.png" alt="Kyouhei Blog">
             <nav>
                 <ul class="header-nav white">
                     <li><a href="" class="nav">ABOUT</a></li>
@@ -43,7 +50,7 @@
 
 
     <section id="first-view" class="white">
-        <img src="./images/lp/firstView.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/lp/firstView.png" alt="">
         <div class="content">
             <div class="wrapper">
                 <p class="font">Best<br>Evidence<br>Training</p>
