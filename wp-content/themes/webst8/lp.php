@@ -19,6 +19,8 @@ Template Name: lpページ
     <link rel="stylesheet" href="./mobile.css" media="(min-width:320px)and(max-width:599px)">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/lp.js"></script>
+    <?php wp_head(); ?>
+    <?php wp_footer(); ?>
 </head>
 
 
