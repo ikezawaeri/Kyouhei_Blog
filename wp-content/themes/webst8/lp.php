@@ -74,7 +74,9 @@ Template Name: lpページ
             <div class="profile">
                 <div class="inner">
                     <div class="career">
-                        <p>経歴</p>
+                        <div class="inner">
+                            <p class="red">経歴</p>
+                        </div>
                         <ul>
                             <li>2015年 - 2018年</li>
                             <li>2018年</li>
@@ -89,15 +91,19 @@ Template Name: lpページ
                         </ul>
                     </div>
                     <div class="qualification">
-                        <p>保有資格</p>
+                        <div class="inner">
+                            <p class="red">保有資格</p>
+                        </div>
                         <ul>
                             <li>NSCA認定 パーソナルトレーナー(CPT)</li>
                             <li>中学・高等学校教諭一種免許状(保健体育)</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="blog">
+                        <div class="inner">
                         <h2>BLOG</h2>
                         <p>おすすめのトレーニング方法や、トレーニンググッズなどについてブログを書いています。</p>
+                        </div>
                     </div>
                 </div>
                 <div class="img">
@@ -108,7 +114,7 @@ Template Name: lpページ
     </section>
 
 
-    <section>
+    <section id="service">
         <h2>SERVICE</h2>
         <h3>トレーニングの特徴</h3>
         <ul>

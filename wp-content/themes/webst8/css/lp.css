@@ -10,7 +10,7 @@ ul {
 a {
     text-decoration: none;
 }
-header .wrapper,#about{
+header .wrapper,#about,#service{
     width: 80%;
     margin: 0 auto;
 }
@@ -152,43 +152,103 @@ header .button a{
 /* ABOUT */
 #about{
     position: relative;
-    height: 625px;
+    height: 810px;
 }
 #about .wrapper{
     position: absolute;
     width: 100%;
-    top: 32%;
+    top: 20%;
 }
 #about .title{
     width: 12%;
     font-size: 1.8rem;
     border-bottom: solid 2px white;
+    letter-spacing: 0.05em;
 }
 #about .name h3{
     font-size: 4rem;
     margin: 2% 0 0 0;
+    letter-spacing: 0.1em;
 }
 #about .name p{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin: 0;
+    letter-spacing: 0.05em;
 }
 .profile{
     display: flex;
     width: 100%;
 }
 .profile .inner{
-    margin-top: 5%;
+    margin-top: 9%;
+    width: 100%;
+}
+.profile ul,.profile p,.career .inner,.qualification .inner{
+    margin: 0;
+}
+.profile .red,.qualification .red{
+    color: #D1163C;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-top: 7px;
+}
+.career{
+    display: flex;
+    width: 85%;
+    border-bottom: #C0C0C0 solid 2px;
+    padding-bottom: 22px;
+}
+.career .inner,.qualification .inner{
+    height: 41px;
+    width: 115px;
+    border: #D1163C solid 2px;
+    text-align: center;
+}
+.career li,.qualification li{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+.qualification{
+    display: flex;
+    margin: 30px 0;
+}
+.profile .blog{
+    width: 53%;
 }
 .profile .img{
-    width: 28%;
+    width: 35%;
     margin:0 0 0 auto
 }
 .profile img{
     width: 100%;
 }
-.career{
-    display: flex;
+.profile .img::before{
+    content: "";
+    background: linear-gradient(170deg,transparent 0%,transparent 50%,#D1163C 50%,#D1163C 100%);
+    position: absolute;
+    width: 26%;
+    height: 55px;
+    top: 86.8%;
 }
-.qualification{
+.profile .blog{
+    width: 48%;
+    border-bottom: 80px solid black;
+    border-left: 50px solid transparent;
+    position: relative;
+}
+.profile .blog .inner{
+    color: white;
     display: flex;
+    position: absolute;
+}
+.profile .blog h2{
+    width: 100px;
+}
+
+/* ABOUT */
+#service{
+    position: relative;
 }
