@@ -34,7 +34,9 @@ echo do_shortcode('[smartslider3 slider="2"]');
      <div id="content-wrap">
          <!--　■最新記事　-->
          <section id="latest">
-             <ul>
+
+             
+             <ul id="latest-list">
 <!--
                 <li>
                      <img class="img-latest">
