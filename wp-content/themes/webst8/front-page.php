@@ -34,7 +34,9 @@ echo do_shortcode('[smartslider3 slider="2"]');
      <div id="content-wrap">
          <!--　■最新記事　-->
          <section id="latest">
-             <ul>
+
+             
+             <ul id="latest-list">
 <!--
                 <li>
                      <img class="img-latest">
@@ -79,6 +81,13 @@ echo do_shortcode('[smartslider3 slider="2"]');
               if ( have_posts() ) :
                   while ( have_posts() ) : the_post();
               ?><!--記事の中身があるか確認-->
+            
+             <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('thumbnail'); ?>
+            <?php else : ?>
+                <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" width="100" height="100" alt="デフォルト画像" />
+            <?php endif ; ?>
+            <!--アイキャッチ画像を表示-->
             
           <h2>
             <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>

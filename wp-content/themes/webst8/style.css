@@ -57,20 +57,24 @@ a.categories {
 
 /*サイドバーとのカラム分け
 （id="content-wrap"）*/
+#content-wrap {
+    width: 100%;
+    display: flex;
+}
 #latest{
     display: flex;
-    width: calc(100% / 3 * 2  - 1%) ;
+/*    width: calc(100% / 3 * 2  - 1%) ;*/
+    width: 60%;
 }
 #sidebar{
     text-align: center;
-    width: calc(100% / 3 - 1%) ;
-    margin-left: 0.5%;
+/*    width: calc(100% / 3 - 1%) ;*/
+/*    margin-left: 0.5%;*/
+    width: 20%;
 }
 
 /*最新記事（id="latest"）*/
-#content-wrap {
-    width: 100%;
-}
+
 #latest{
   display: flex;
 }

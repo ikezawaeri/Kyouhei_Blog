@@ -9,17 +9,29 @@
 </div>
 
 
+
  <section id="content">
 	 <div id="content-wrap" class="container">
          
          <!--固定ページの中身-->
  		<div id="main" class="col-md-9">
+            <h1>投稿用のテンプレート</h1>
+            <br><br>
+            
+            
  			 <?php 
               if ( have_posts() ) :
                   while ( have_posts() ) : the_post();
               ?><!--記事の中身があるか確認-->
             
-                  <h1><?php the_title(); ?></h1><!--記事のタイトルを出力-->
+                    <div style="width: 500px;">
+                        <?php
+                        if(has_post_thumbnail()):
+                            the_post_thumbnail();
+                        endif; ?><!--サムネイルを表示-->
+                    </div>
+            
+                  <h2 style="font-weight:bold"><?php the_title(); ?></h2><!--記事のタイトルを出力-->
                   <section>
                     <?php the_content(); ?><!--記事の本文を出力-->
                   </section>
