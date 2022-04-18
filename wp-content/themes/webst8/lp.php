@@ -15,8 +15,8 @@ Template Name: lpページ
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sanitize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lp.css" media="(min-width:1024px)">
-    <link rel="stylesheet" href="./css/lpTablet.css">
-    <link rel="stylesheet" href="./mobile.css" media="(min-width:320px)and(max-width:599px)">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lpTablet.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mobile.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/lp.js"></script>
     <?php wp_head(); ?>
