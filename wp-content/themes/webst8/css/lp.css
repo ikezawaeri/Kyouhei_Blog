@@ -101,6 +101,9 @@ header .button a{
     display: block;
     height: 100%;
 }
+.menu-btn{
+    display: none;
+}
 
 
 /* ファーストビュー */

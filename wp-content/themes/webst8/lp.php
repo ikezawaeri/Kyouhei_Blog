@@ -28,24 +28,35 @@ Template Name: lpページ
 
     <header>
         <div class="wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/lp/logo.png" alt="Kyouhei Blog">
-            <nav>
-                <ul class="header-nav white">
-                    <li><a href="" class="nav">ABOUT</a></li>
-                    <li class="pull">
-                        <a href="" class="nav">SERVICE</a>
-                        <ul class="sub">
-                            <li><a href="">トレーニングの特徴</a></li>
-                            <li><a href="">トレーニング事例</a></li>
-                            <li><a href="">料金プラン</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="" class="nav">ACCESS</a></li>
-                    <li><a href="" class="nav">BLOG</a></li>
-                </ul>
-            </nav>
-            <div class="button white">
-                <a href="">トレーニングを申し込む</a>
+            <div class="menu-bar-bg">
+                <div class="menu-bar">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/lp/logo.png" alt="Kyouhei Blog">
+                    <div class="menu-btn">
+                        <span class="border"></span>
+                        <span class="border"></span>
+                        <span class="border"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul class="header-nav white">
+                        <li><a href="" class="nav">ABOUT</a></li>
+                        <li class="pull">
+                            <a href="" class="nav">SERVICE</a>
+                            <ul class="sub">
+                                <li><a href="">トレーニングの特徴</a></li>
+                                <li><a href="">トレーニング事例</a></li>
+                                <li><a href="">料金プラン</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="nav">ACCESS</a></li>
+                        <li><a href="" class="nav">BLOG</a></li>
+                    </ul>
+                </nav>
+                <div class="button white">
+                    <a href="">トレーニングを申し込む</a>
+                </div>
             </div>
         </div>
     </header>
