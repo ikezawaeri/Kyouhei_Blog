@@ -7,12 +7,11 @@ const matchMedia = window.matchMedia('(max-width:1023px)');
     //スマホ・タブレット
         //ヘッダー　ハンバーガーメニュー
         $(function() {
-            // var nav = document.getElementById("menu");
-            // var hamburger = document.getElementById("menu-btn");
-
-            $('.menu-btn').on("click", function () {
-                console.log(1);
-                $('.menu').toggle("open");
+            $(".menu-btn").on("click", function () {
+                //ボタンの変化
+                $(this).toggleClass('active');
+                //メニューの変化
+                $(".menu").toggleClass("open");
             });
         });
 
