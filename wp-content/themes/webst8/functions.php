@@ -19,6 +19,11 @@ add_action( 'after_setup_theme', 'webst8_setup' );
 //after_setup_theme(テーマ初期化のタイミング)にwebst8_setupという関数を実行
 
 
+//▼LPページ用（WP版jQueryをlp.jsの前に読み込む）
+function lp_scripts() {
+	wp_enqueue_script( 'lp', get_template_directory_uri() . '/js/lp.js', array( 'jquery' ) );
+}
+add_action( 'wp_enqueue_scripts', 'lp_scripts' );
 
 
 
