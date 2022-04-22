@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 /* 共通 */
 html{
     font-size: 62.5%;
@@ -50,9 +51,14 @@ header img{
     position: relative;
 }
 header img{
-    width: auto;
     height: 40px;
-    vertical-align: middle;
+}
+header .menu{
+    display: flex;
+    margin-left: auto;
+}
+header .menu-bar{
+    padding-top: 24px;
 }
 header nav{
     margin-left: auto;
@@ -76,7 +82,7 @@ header .nav{
 }
 .sub li{
     background-color: rgba(0,0,0,0.6);
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .sub a{
     font-size: 1.3rem;
@@ -125,7 +131,6 @@ header .button a{
 #first-view .font{
     font-family: Futura, 'Century Gothic';
     font-style: italic;
-    /* font-size: 9.2rem; */
     font-size: clamp(8.2rem,1vw,9.2rem);
     line-height: 8.2rem;
     margin: 0;
@@ -144,6 +149,9 @@ header .button a{
     font-weight: 600;
     line-height: 3.0rem;
     letter-spacing: 0.1rem;
+}
+#first-view .hidden-pc{
+    display: none;
 }
 #first-view .background{
     position: absolute;

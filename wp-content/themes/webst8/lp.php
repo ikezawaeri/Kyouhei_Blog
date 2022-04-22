@@ -62,12 +62,18 @@ Template Name: lpページ
 
 
     <section id="first-view" class="white">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/lp/firstView.png" alt="">
+        <div class="img">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/lp/firstView.png" alt="">
+        </div>
         <div class="content">
             <div class="wrapper">
-                <p class="font">Best<br>Evidence<br>Training</p>
-                <h1>エビデンスに基づくベストなトレーニング</h1>
-                <p class="text">瀬川恭平のトレーニング理論には、全て理由があります。<br>科学的根拠を基に、ひとりひとりに合ったベストな<br>トレーニング方法をご提案します。</p>
+                <div class="copy-en">
+                    <p class="font">Best<br>Evidence<br>Training</p>
+                </div>
+                <div class="copy-jp">
+                    <h1>エビデンスに基づく<br class="hidden-pc">ベストなトレーニング</h1>
+                    <p class="text">瀬川恭平のトレーニング理論には、全て理由があります。<br>科学的根拠を基に、ひとりひとりに合ったベストな<br class="hidden-mb">トレーニング方法をご提案します。</p>
+                </div>
             </div>
         </div>
         <div class="background"></div>
