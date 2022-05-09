@@ -17,7 +17,7 @@ ul {
 a {
     text-decoration: none;
 }
-.menu-bar,.menu nav,.menu .button,#first-view .copy-jp,#about{
+.menu-bar,.menu nav,.menu .button,#first-view .copy-jp,#about,.blog-mb .inner{
     width: 80%;
     margin: 0 auto;
 }
@@ -155,31 +155,40 @@ header img{
 }
 
 
+
 /* ファーストビュー */
 #first-view{
     position: relative;
-    top: 55px;
-    width: 100vw;
+    margin-top: 68px;
+    width: 100%;
+}
+#first-view .img{
+    position: absolute;
+    z-index: -1;
+    width: 150%;
+    left: -110px;
 }
 #first-view img{
-    position: relative;
-    right: 95px;
-    width: 210%;
+    width: 130%;
+}
+#first-view .background-mb{
+    position: absolute;
+    width: 100%;
+    height: 406px;
+    background-color: #D1163C;
+    transform: skewY(-7deg);
+    top: 53%;
+    z-index: 1;
 }
 #first-view .content{
-    position: absolute;
-    top: 10%;
-    left: 0;
+    position: relative;
     width: 100%;
     z-index: 2;
 }
-#first-view .background{
-    position: absolute;
-    width: 100%;
-    height: 105%;
-    background-color: #D1163C;
-    transform: skewY(-7deg);
-    top: 88%;
+#first-view .copy-en{
+    margin: auto;
+    width: 270px;
+    padding-top: 17%;
 }
 #first-view .font{
     font-family: Futura, 'Century Gothic';
@@ -188,16 +197,15 @@ header img{
     line-height: 6.5rem;
     margin: 0;
 }
-
+#first-view .copy-jp{
+    margin-top: 30%;
+}
 #first-view h1{
     margin: 0;
-    padding: 40px 0 20px 0;
+    padding: 50px 0 10px 0;
     font-size: 2.5rem;
     letter-spacing: 0.1rem;
     border-bottom: solid 3px white;
-}
-#first-view .wrapper{
-    position: relative;
 }
 #first-view .text{
     margin: 0;
@@ -205,17 +213,123 @@ header img{
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 3.0rem;
-    letter-spacing: 0.1rem;
-}
-#first-view .copy-en{
-    margin: 16% auto 0 auto;
-    width: 270px;
-}
-#first-view .copy-jp{
-    margin-top: 22%;
+    letter-spacing: 0.05rem;
 }
 #first-view .hidden-mb{
     display: none;
 }
+#first-view .background{
+    display: none;
+}
+
+
+/* ABOUT */
+#about{
+    position: relative;
+    margin-top: 43%;
+}
+#about h2{
+    color: #D1163C;
+    width: 40%;
+    font-size: 1.8rem;
+    border-bottom: solid 2px #D1163C;
+    letter-spacing: 0.05em;
+}
+#about .name{
+    margin-top: 25px;
+}
+#about .name h3{
+    color: black;
+    font-size: 2.5rem;
+    margin: 2% 0 0 0;
+    letter-spacing: 0.1em;
+}
+#about .name p{
+    color: black;
+    font-size: 1.3rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+.profile .img-mb{
+    width: 100%;
+    margin: 20px 0 30px 0;
+    height: 300px;
+    overflow: hidden;
+}
+.profile img{
+    width: 100%;
+}
+.profile .img{
+    display: none;
+}
+.career .inner,.qualification .inner{
+    margin: 20px 0 10px 0;
+    background-color: #D1163C;
+    padding: 5px 0 5px 15px;
+}
+.career .inner p,.qualification .inner p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+.text{
+    display: flex;
+}
+.text ul{
+    padding: 0;
+    margin: 0;
+}
+.text ul:nth-child(1){
+    padding-right: 10px;
+}
+.text ul:nth-child(2){
+    padding-left: 10px;
+    border-left: #D1163C dashed 1px;
+}
+.text li,.qualification li{
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+}
+.qualification ul{
+    padding: 0;
+    margin: 0;
+}
+.blog{
+    display: none;
+}
+.blog-mb{
+    height: 105px;
+    background-color: black;
+    margin-top: 25px;
+}
+.blog-mb .inner{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.blog-mb h2{
+    width: 62%;
+    height: 38px;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    text-align: right;
+    border-bottom: white solid 3px;
+}
+.blog-mb p{
+    font-size: 1.3rem;
+    margin-left: 10%;
+}
+
+
+
+
+
+/* SERVICE */
+#service{
+    position: relative;
+}
+
 
 }

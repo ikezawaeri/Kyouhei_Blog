@@ -11,7 +11,7 @@ ul {
 a {
     text-decoration: none;
 }
-header .wrapper,#about,#service{
+header .wrapper,#about,#service .wrapper1,#service .wrapper2{
     width: 80%;
     margin: 0 auto;
 }
@@ -221,6 +221,9 @@ header .button a{
     border: #D1163C solid 2px;
     text-align: center;
 }
+.career .text{
+    display: flex;
+}
 .career li,.qualification li{
     font-size: 1.5rem;
     font-weight: 600;
@@ -236,10 +239,13 @@ header .button a{
 }
 .profile .img{
     width: 26%;
-    margin:0 0 0 auto
+    margin:auto 0 0 auto
 }
 .profile img{
     width: 100%;
+}
+.profile .img-mb{
+    display: none;
 }
 .profile .blog{
     width: 395px;
@@ -266,9 +272,22 @@ header .button a{
     margin: 0 30px 0 0;
     padding: 10px 0 10px 0;
 }
+.blog-mb{
+    display: none;
+}
 
 
-/* ABOUT */
+/* SERVICE */
 #service{
     position: relative;
+    height: 1570px;
+}
+#service .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #F9F5F2;
+    transform: skewY(-7deg);
+    margin-top: 6%;
+    z-index: -1;
 }

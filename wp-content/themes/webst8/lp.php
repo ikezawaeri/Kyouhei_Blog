@@ -16,7 +16,7 @@ Template Name: lpページ
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sanitize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lp.css" media="(min-width:1024px)">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lpTablet.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mobile.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lpMobile.css">
     <script src="<?php echo get_template_directory_uri(); ?>/js/lp.js"></script>
     <?php wp_head(); ?>
     <?php wp_footer(); ?>
@@ -65,6 +65,7 @@ Template Name: lpページ
         <div class="img">
             <img src="<?php echo get_template_directory_uri(); ?>/images/lp/firstView.png" alt="">
         </div>
+        <div class="background-mb"></div>
         <div class="content">
             <div class="wrapper">
                 <div class="copy-en">
@@ -79,7 +80,6 @@ Template Name: lpページ
         <div class="background"></div>
     </section>
 
-
     <section id="about">
         <div class="wrapper">
             <h2 class="title white">TRAINER</h2>
@@ -88,23 +88,28 @@ Template Name: lpページ
                 <p>Kyouhei Segawa</p>
             </div>
             <div class="profile">
+                <div class="img-mb">
+                    <img src="http://localhost/wp01/wp-content/uploads/2022/04/profile.jpg" alt="">
+                </div>
                 <div class="inner">
                     <div class="career">
                         <div class="inner">
                             <p class="red">経歴</p>
                         </div>
-                        <ul>
-                            <li>2015年 - 2018年</li>
-                            <li>2018年</li>
-                            <li>2018年 - 2019年</li>
-                            <li>2020年 -</li>
-                        </ul>
-                        <ul>
-                            <li>病院併設ジム勤務</li>
-                            <li>東海大学 体育学部 体育学科卒業</li>
-                            <li>パーソナルジム勤務</li>
-                            <li>フリーのトレーナーとして活動</li>
-                        </ul>
+                        <div class="text">
+                            <ul>
+                                <li>2015 ー 2018</li>
+                                <li>2018</li>
+                                <li>2018 ー 2019</li>
+                                <li>2020 ー</li>
+                            </ul>
+                            <ul>
+                                <li>病院併設ジム勤務</li>
+                                <li>東海大学 体育学部 体育学科卒業</li>
+                                <li>パーソナルジム勤務</li>
+                                <li>フリーのトレーナーとして活動</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="qualification">
                         <div class="inner">
@@ -128,38 +133,50 @@ Template Name: lpページ
             </div>
         </div>
     </section>
-
+    <div class="blog-mb white">
+        <div class="inner">
+            <h2>BLOG</h2>
+            <p>おすすめのトレーニング方法や、トレーニンググッズなどについてブログを書いています。</p>
+        </div>
+    </div>
 
     <section id="service">
-        <h2>SERVICE</h2>
-        <h3>トレーニングの特徴</h3>
-        <ul>
-            <li>
-               <img src="" alt="">
-                <p>POINT</p>
-                <p>オーダーメイドのトレーニング</p>
-                <p>体質やライフスタイルの違い、目的などに合わせ、一人一人に合ったオーダーメイドのメニューをご提供します。</p>
-            </li>
-            <li>
+        <div class="background"></div>
+        <div class="">
+            <p>PERSONAL</p>
+            <p>TRAINING</p>
+        </div>
+        <div class="wrapper1">
+            <h2>SERVICE</h2>
+            <h3>トレーニングの特徴</h3>
+            <ul>
+                <li>
                 <img src="" alt="">
-                 <p>POINT</p>
-                 <p>科学的根拠に基づくトレーニング</p>
-                 <p>筋トレの効果を出すには正しい理論が重要です。論文や書籍で得た知識を用い、根拠のあるトレーニングを提供します。</p>
-             </li>
-             <li>
-                <img src="" alt="">
-                 <p>POINT</p>
-                 <p>完璧を目指さない指導内容</p>
-                 <p>完璧主義はモチベーションの低下を招くこともあります。完璧を目指さない指導でモチベーションの低下を防ぎます。</p>
-             </li>
-             <li>
-                <img src="" alt="">
-                 <p>POINT</p>
-                 <p>美しいボディメイクを実現する</p>
-                 <p>無闇にトレーニングしていても美しい体は作れません。必要な筋肉をピンポイントで刺激し、ボディメイクを実現します。</p>
-             </li>
-        </ul>
-        <div>
+                    <p>POINT</p>
+                    <p>オーダーメイドのトレーニング</p>
+                    <p>体質やライフスタイルの違い、目的などに合わせ、一人一人に合ったオーダーメイドのメニューをご提供します。</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p>POINT</p>
+                    <p>科学的根拠に基づくトレーニング</p>
+                    <p>筋トレの効果を出すには正しい理論が重要です。論文や書籍で得た知識を用い、根拠のあるトレーニングを提供します。</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p>POINT</p>
+                    <p>完璧を目指さない指導内容</p>
+                    <p>完璧主義はモチベーションの低下を招くこともあります。完璧を目指さない指導でモチベーションの低下を防ぎます。</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <p>POINT</p>
+                    <p>美しいボディメイクを実現する</p>
+                    <p>無闇にトレーニングしていても美しい体は作れません。必要な筋肉をピンポイントで刺激し、ボディメイクを実現します。</p>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper2">
             <h3>トレーニング事例</h3>
             <ul>
                 <li></li>
