@@ -25,6 +25,7 @@ Template Name: lpページ
 
 <body>
 
+
     <header>
         <div class="wrapper">
             <div class="menu-bar-bg">
@@ -79,6 +80,7 @@ Template Name: lpページ
         </div>
         <div class="background"></div>
     </section>
+
 
     <section id="about">
         <div class="wrapper">
@@ -140,13 +142,13 @@ Template Name: lpページ
         </div>
     </div>
 
-    <section id="service">
+
+    <section id="service1">
         <div class="background"></div>
-        <div class="">
-            <p>PERSONAL</p>
-            <p>TRAINING</p>
+        <div class="pt">
+            <p>PERSONAL<br>TRAINING</p>
         </div>
-        <div class="wrapper1">
+        <div class="wrapper">
             <h2>SERVICE</h2>
             <h3>トレーニングの特徴</h3>
             <ul>
@@ -176,7 +178,11 @@ Template Name: lpページ
                 </li>
             </ul>
         </div>
-        <div class="wrapper2">
+    </section>
+
+
+    <section id="service2">
+        <div class="wrapper">
             <h3>トレーニング事例</h3>
             <ul>
                 <li></li>
@@ -189,7 +195,8 @@ Template Name: lpページ
         </div>
     </section>
 
-    <section>
+
+    <section id="service3">
         <h3>料金プラン</h3>
         <div>
             <table>
