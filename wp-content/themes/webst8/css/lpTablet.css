@@ -17,7 +17,7 @@ ul {
 a {
     text-decoration: none;
 }
-.menu-bar,.menu nav,.menu .button,#about{
+.menu-bar,.menu nav,.menu .button,#about,#service1 .wrapper,#service2 .wrapper,#service3 .wrapper,#access .wrapper{
     width: 80%;
     margin: 0 auto;
 }
@@ -28,6 +28,7 @@ a {
 .white,.white a{
     color: white;
 }
+
 
 
 /* ヘッダー */
@@ -203,6 +204,7 @@ header img{
 }
 
 
+
 /* ABOUT */
 #about{
     position: relative;
@@ -308,20 +310,128 @@ header img{
 }
 
 
-/* SERVICE */
-#background{
+
+/* SERVICE_特徴 */
+#service1{
     position: relative;
+    height: calc(100vh * 1.9);
+    margin-top: 70px;
+}
+#service1 .background{
+    position: absolute;
     width: 100%;
-    height: 300px;
+    height: 100%;
     background-color: #F9F5F2;
     transform: skewY(-7deg);
-    margin-top: 2%;
+    margin-top: 6%;
+    z-index: -1;
 }
-#service{
+.pt{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    margin-top: 60px;
+    z-index: -1;
+}
+.pt p{
+    font-family: Futura, 'Century Gothic';
+    font-size: 11.3rem;
+    font-style: italic;
+    margin: 0;
+    color: white;
+    line-height: 11rem;
+}
+#service1 img {
+    width: 100%;
+}
+#service1 .wrapper{
+    position: absolute;
+    top: 17%;
+    right: 0;
+    left: 0;
+}
+#service1 .wrapper h2{
+    width: 20%;
+    color: #D1163C;
+    font-size: 1.8rem;
+    border-bottom: solid 2px #D1163C;
+    letter-spacing: 0.05em;
+}
+#service1 .wrapper h3{
+    font-size: 3rem;
+    color: #D1163C;
+}
+#service1 .wrapper ul{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 395px;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+#service1 .wrapper li{
+    width: 45.5%;
+    height: 100%;
+    position: relative;
+}
+#service1 .point{
+    background-color: white;
+    padding: 4% 8% 3% 8%;
+    height: 60%;
+}
+#service1 .point p{
+    margin: 0;
+}
+#service1 .number{
+    color: #D1163C;
+    font-family: Futura, 'Century Gothic';
+    font-size: 4.8rem;
+}
+#service1 .title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+#service1 .text{
+    font-size: 1.3rem;
+    padding-top: 10px;
+    height: 95px;
+    line-height: 2rem;
+}
+#service1 .triangle{
+    display: block;
+    position: absolute;
+    border-right: 60px #D1163C solid;
+    border-bottom: 60px solid transparent;
+    right: 0;
+}
+#service1 .title::after{
+    content: "";
+    border-bottom: solid #D1163C 2px;
+    width: 24px;
+    display: block;
+    padding-top: 5%;
+}
+
+
+
+/* SERVICE_事例 */
+#service2{
     position: relative;
 }
 
 
 
+/* SERVICE_料金 */
+#service3{
+    position: relative;
+}
+
+
+
+/* ACCESS */
+#access{
+    position: relative;
+}
 
 }

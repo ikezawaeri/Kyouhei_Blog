@@ -12,7 +12,7 @@ ul {
 a {
     text-decoration: none;
 }
-header .wrapper,#about,#service1 .wrapper,#service2 .wrapper{
+header .wrapper,#about,#service1 .wrapper,#service2 .wrapper,#service3 .wrapper,#access .wrapper{
     width: 80%;
     margin: 0 auto;
 }
@@ -100,7 +100,7 @@ header .button::before{
     bottom: 0;
     background: linear-gradient(45deg, #EC5E1E 0%, #D1163C 100%);
     transform: skewX(-25deg);
-    padding: 45px 100px;
+    padding: 45.2px 100px;
     z-index: -1;
 }
 header .button a{
@@ -167,7 +167,7 @@ header .button a{
 /* ABOUT */
 #about{
     position: relative;
-    height: 810px;
+    height: 820px;
 }
 #about .wrapper{
     position: absolute;
@@ -285,11 +285,11 @@ header .button a{
 }
 
 
-/* SERVICE */
+/* SERVICE_特徴 */
 #service1{
     position: relative;
-    height: 1570px;
-    margin-top: 70px;
+    height: calc(100vh * 2.9);
+    margin-top: 96px;
 }
 #service1 .background{
     position: absolute;
@@ -317,7 +317,7 @@ header .button a{
 }
 #service1 .wrapper{
     position: absolute;
-    top: 20%;
+    top: 15%;
     right: 0;
     left: 0;
 }
@@ -331,4 +331,86 @@ header .button a{
 #service1 .wrapper h3{
     font-size: 4rem;
     color: #D1163C;
+}
+#service1 .ul1{
+    margin: 80px 0 0 0;
+}
+#service1 .ul2{
+    margin-top: 10%;
+}
+#service1 .wrapper ul{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 640px;
+}
+#service1 .wrapper li{
+    width: 45.5%;
+    height: 100%;
+    position: relative;
+}
+#service1 .point{
+    background-color: white;
+    padding: 3% 8% 3% 8%;
+    height: 48%;
+}
+#service1 .point p{
+    margin: 0;
+}
+#service1 .point br{
+    display: none;
+}
+#service1 .number{
+    color: #D1163C;
+    font-family: Futura, 'Century Gothic';
+    font-size: 7.8rem;
+}
+#service1 .title{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#service1 .text{
+    font-size: 1.5rem;
+    padding-top: 15px;
+    height: 95px;
+    line-height: 2.5rem;
+}
+#service1 .triangle{
+    display: block;
+    position: absolute;
+    border-right: 60px #D1163C solid;
+    border-bottom: 60px solid transparent;
+    right: 0;
+}
+#service1 .title::after{
+    content: "";
+    border-bottom: solid #D1163C 2px;
+    width: 40px;
+    display: block;
+    padding-top: 3%;
+}
+#service1 img{
+    width: 100%;
+}
+
+
+
+/* SERVICE_事例 */
+#service2{
+    position: relative;
+}
+
+
+
+/* SERVICE_料金 */
+#service3{
+    position: relative;
+}
+
+
+
+/* ACCESS */
+#access{
+    position: relative;
 }
