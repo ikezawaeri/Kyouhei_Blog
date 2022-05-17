@@ -17,13 +17,14 @@ ul {
 a {
     text-decoration: none;
 }
-.menu-bar,.menu nav,.menu .button,#first-view .copy-jp,#about,.blog-mb .inner{
+.menu-bar,.menu nav,.menu .button,#first-view .copy-jp,#about,.blog-mb .inner,#service1 .wrapper,#service2 .wrapper,#service3 .wrapper,#access .wrapper{
     width: 80%;
     margin: 0 auto;
 }
 .white,.white a{
     color: white;
 }
+
 
 
 /* ヘッダー */
@@ -177,7 +178,7 @@ header img{
     height: 406px;
     background-color: #D1163C;
     transform: skewY(-7deg);
-    top: 53%;
+    top: 49%;
     z-index: 1;
 }
 #first-view .content{
@@ -221,6 +222,7 @@ header img{
 #first-view .background{
     display: none;
 }
+
 
 
 /* ABOUT */
@@ -324,10 +326,118 @@ header img{
 
 
 
+/* SERVICE_特徴 */
+#service1{
+    position: relative;
+    height: calc(100vh * 2.8);
+    margin-top: -10px;
+}
+#service1 .background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #F9F5F2;
+    z-index: -1;
+}
+.pt{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    margin-top: 60px;
+    z-index: -1;
+}
+.pt p{
+    font-family: Futura, 'Century Gothic';
+    font-size: 6rem;
+    font-style: italic;
+    margin: 0;
+    color: white;
+    line-height: 6.3rem;
+}
+#service1 img {
+    width: 100%;
+}
+#service1 .wrapper{
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    left: 0;
+}
+#service1 .wrapper h2{
+    width: 40%;
+    color: #D1163C;
+    font-size: 1.8rem;
+    border-bottom: solid 2px #D1163C;
+    letter-spacing: 0.05em;
+}
+#service1 .wrapper h3{
+    font-size: 3rem;
+    color: #D1163C;
+    margin: 10% 0 20% 0;
+}
+#service1 .wrapper ul{
+    padding: 0;
+    margin: 0;
+}
+#service1 .wrapper li{
+    padding-bottom: 25%;
+}
+#service1 .point{
+    background-color: white;
+    padding: 4% 8% 3% 8%;
+    height: 60%;
+}
+#service1 p{
+    margin: 0;
+}
+#service1 .number{
+    color: #D1163C;
+    font-family: Futura, 'Century Gothic';
+    font-size: 3.8rem;
+}
+#service1 .title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+#service1 .text{
+    font-size: 1.3rem;
+    padding-top: 10px;
+    height: 95px;
+    line-height: 2rem;
+}
+#service1 .triangle{
+    display: block;
+    position: absolute;
+    border-right: 60px #D1163C solid;
+    border-bottom: 60px solid transparent;
+    right: 0;
+}
+#service1 .title::after{
+    content: "";
+    border-bottom: solid #D1163C 2px;
+    width: 24px;
+    display: block;
+    padding-top: 5%;
+}
 
 
-/* SERVICE */
-#service{
+
+/* SERVICE_事例 */
+#service2{
+    position: relative;
+}
+
+
+
+/* SERVICE_料金 */
+#service3{
+    position: relative;
+}
+
+
+
+/* ACCESS */
+#access{
     position: relative;
 }
 

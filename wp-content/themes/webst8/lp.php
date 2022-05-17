@@ -151,30 +151,56 @@ Template Name: lpページ
         <div class="wrapper">
             <h2>SERVICE</h2>
             <h3>トレーニングの特徴</h3>
-            <ul>
+            <ul class="ul1">
                 <li>
-                <img src="" alt="">
-                    <p>POINT</p>
-                    <p>オーダーメイドのトレーニング</p>
-                    <p>体質やライフスタイルの違い、目的などに合わせ、一人一人に合ったオーダーメイドのメニューをご提供します。</p>
+                    <span class=triangle></span>
+                    <div class="point">
+                        <p class="number">01</p>
+                        <p class="title">オーダーメイドの<br>トレーニング</p>
+                        <p class="text">体質やライフスタイルの違い、目的などに合わせ、一人一人に合ったオーダーメイドのメニューをご提供します。</p>
+                    </div>
+                    <div class="img">
+                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="オーダーメイドのトレーニング">
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <p>POINT</p>
-                    <p>科学的根拠に基づくトレーニング</p>
-                    <p>筋トレの効果を出すには正しい理論が重要です。論文や書籍で得た知識を用い、根拠のあるトレーニングを提供します。</p>
+                    <span class=triangle></span>
+                    <div class="point">
+                        <p class="number">02</p>
+                        <p class="title">科学的根拠に基づく<br>トレーニング</p>
+                        <p class="text">筋トレの効果を出すには正しい理論が重要です。論文や書籍で得た知識を用い、根拠のあるトレーニングを提供します。</p>
+                    </div>
+                    <div class="img">
+                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="科学的根拠に基づくトレーニング">
+                    </divclass=>
+                </li>
+            </ul>
+            <ul class="ul2">
+                <li>
+                    <span class=triangle></span>
+                    <div class="point">
+                        <div class="inner">
+                            <p class="number">03</p>
+                            <p class="title">完璧を目指さない<br>指導内容</p>
+                        </div>
+                        <p class="text">完璧主義はモチベーションの低下を招くこともあります。完璧を目指さない指導でモチベーションの低下を防ぎます。</p>
+                    </div>
+                    <div class="img">
+                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="完璧を目指さない指導内容">
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <p>POINT</p>
-                    <p>完璧を目指さない指導内容</p>
-                    <p>完璧主義はモチベーションの低下を招くこともあります。完璧を目指さない指導でモチベーションの低下を防ぎます。</p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>POINT</p>
-                    <p>美しいボディメイクを実現する</p>
-                    <p>無闇にトレーニングしていても美しい体は作れません。必要な筋肉をピンポイントで刺激し、ボディメイクを実現します。</p>
+                    <span class=triangle></span>
+                    <div class="point">
+                        <div class="inner">
+                            <p class="number">04</p>
+                            <p class="title">美しいボディメイクを<br>実現する</p>
+                        </div>
+                        <p class="text">無闇にトレーニングしていても美しい体は作れません。必要な筋肉をピンポイントで刺激し、理想のボディメイクを実現します。</p>
+                    </div>
+                    <div class="img">
+                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="美しいボディメイクを実現する">
+                    </div>
                 </li>
             </ul>
         </div>
@@ -197,60 +223,64 @@ Template Name: lpページ
 
 
     <section id="service3">
-        <h3>料金プラン</h3>
-        <div>
-            <table>
-                <tr>
-                    <td rowspan="3">
-                        <p>単発</p>
-                        <p>説明文</p>
-                    </td>
-                    <td>30分（初回のみ60分）</td>
-                    <td>3,750円</td>
-                </tr>
-                <tr>
-                    <td>60分（初回のみ90分）</td>
-                    <td>7,000円</td>
-                </tr>
-                <tr>
-                    <td>90分（初回のみ120分）</td>
-                    <td>10,000円</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td rowspan="2">
-                        <p>回数券</p>
-                        <p>説明文</p>
-                    </td>
-                    <td>60分 4回券</td>
-                    <td>26,000円</td>
-                </tr>
-                <tr>
-                    <td>60分 8回券</td>
-                    <td>52,000円</td>
-                </tr>
-            </table>
+        <div class="wrapper">
+            <h3>料金プラン</h3>
+            <div>
+                <table>
+                    <tr>
+                        <td rowspan="3">
+                            <p>単発</p>
+                            <p>説明文</p>
+                        </td>
+                        <td>30分（初回のみ60分）</td>
+                        <td>3,750円</td>
+                    </tr>
+                    <tr>
+                        <td>60分（初回のみ90分）</td>
+                        <td>7,000円</td>
+                    </tr>
+                    <tr>
+                        <td>90分（初回のみ120分）</td>
+                        <td>10,000円</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <p>回数券</p>
+                            <p>説明文</p>
+                        </td>
+                        <td>60分 4回券</td>
+                        <td>26,000円</td>
+                    </tr>
+                    <tr>
+                        <td>60分 8回券</td>
+                        <td>52,000円</td>
+                    </tr>
+                </table>
+            </div>
+            <button>
+                <span>トレーニングお申込み</span>
+            </button>
         </div>
-        <button>
-            <span>トレーニングお申込み</span>
-        </button>
     </section>
 
-    <section>
-        <div>
-            <h2>ACCESS</h2>
+    <section id="access">
+        <div class="wrapper">
             <div>
-                <p>エニタイムフィットネスコトニアガーデン新川崎店</p>
-                <a href=""></a>
+                <h2>ACCESS</h2>
+                <div>
+                    <p>エニタイムフィットネスコトニアガーデン新川崎店</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <p>エニタイムフィットネス武蔵中原</p>
+                    <a href=""></a>
+                </div>
             </div>
             <div>
-                <p>エニタイムフィットネス武蔵中原</p>
-                <a href=""></a>
+                map
             </div>
-        </div>
-        <div>
-            map
         </div>
     </section>
 
