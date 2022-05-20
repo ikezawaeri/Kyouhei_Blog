@@ -1106,7 +1106,9 @@ function the_meta() {
 			$html = sprintf(
 				"<li><span class='post-meta-key'>%s</span> %s</li>\n",
 				/* translators: %s: Post custom field name. */
-				sprintf( _x( '%s:', 'Post custom field name' ), $key ),
+				sprintf( _x( '%s', 'Post custom field name' ), $key ),
+				/* ↑ 元々下記でしたが編集しました
+				sprintf( _x( '%s:', 'Post custom field name' ), $key ), */
 				$value
 			);
 

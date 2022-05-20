@@ -211,7 +211,15 @@ Template Name: lpページ
         <div class="wrapper">
             <h3>トレーニング事例</h3>
             <ul>
-                <li></li>
+                <li>
+                    <a href="">
+                        <div>
+                            <figure>
+                                <img src="" alt="">
+                            </figure>
+                        </div>
+                    </a>
+                </li>
                 <li></li>
                 <li></li>
             </ul>
@@ -226,38 +234,7 @@ Template Name: lpページ
         <div class="wrapper">
             <h3>料金プラン</h3>
             <div>
-                <table>
-                    <tr>
-                        <td rowspan="3">
-                            <p>単発</p>
-                            <p>説明文</p>
-                        </td>
-                        <td>30分（初回のみ60分）</td>
-                        <td>3,750円</td>
-                    </tr>
-                    <tr>
-                        <td>60分（初回のみ90分）</td>
-                        <td>7,000円</td>
-                    </tr>
-                    <tr>
-                        <td>90分（初回のみ120分）</td>
-                        <td>10,000円</td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td rowspan="2">
-                            <p>回数券</p>
-                            <p>説明文</p>
-                        </td>
-                        <td>60分 4回券</td>
-                        <td>26,000円</td>
-                    </tr>
-                    <tr>
-                        <td>60分 8回券</td>
-                        <td>52,000円</td>
-                    </tr>
-                </table>
+                <?php the_meta(); ?>
             </div>
             <button>
                 <span>トレーニングお申込み</span>
