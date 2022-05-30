@@ -160,7 +160,7 @@ Template Name: lpページ
                         <p class="text">体質やライフスタイルの違い、目的などに合わせ、一人一人に合ったオーダーメイドのメニューをご提供します。</p>
                     </div>
                     <div class="img">
-                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="オーダーメイドのトレーニング">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/lp/point1.png" alt="オーダーメイドのトレーニング">
                     </div>
                 </li>
                 <li>
@@ -171,7 +171,7 @@ Template Name: lpページ
                         <p class="text">筋トレの効果を出すには正しい理論が重要です。論文や書籍で得た知識を用い、根拠のあるトレーニングを提供します。</p>
                     </div>
                     <div class="img">
-                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="科学的根拠に基づくトレーニング">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/lp/point1.png" alt="科学的根拠に基づくトレーニング">
                     </divclass=>
                 </li>
             </ul>
@@ -186,7 +186,7 @@ Template Name: lpページ
                         <p class="text">完璧主義はモチベーションの低下を招くこともあります。完璧を目指さない指導でモチベーションの低下を防ぎます。</p>
                     </div>
                     <div class="img">
-                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="完璧を目指さない指導内容">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/lp/point1.png" alt="完璧を目指さない指導内容">
                     </div>
                 </li>
                 <li>
@@ -199,7 +199,7 @@ Template Name: lpページ
                         <p class="text">無闇にトレーニングしていても美しい体は作れません。必要な筋肉をピンポイントで刺激し、理想のボディメイクを実現します。</p>
                     </div>
                     <div class="img">
-                        <img src="http://localhost/wp01/wp-content/uploads/2022/05/point1.png" alt="美しいボディメイクを実現する">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/lp/point1.png" alt="美しいボディメイクを実現する">
                     </div>
                 </li>
             </ul>
@@ -211,30 +211,52 @@ Template Name: lpページ
         <div class="wrapper">
             <h3>トレーニング事例</h3>
             <ul>
-                <li>
-                    <a href="">
-                        <div>
-                            <figure>
-                                <img src="" alt="">
-                            </figure>
-                        </div>
-                    </a>
-                </li>
-                <li></li>
-                <li></li>
+                <li>ここにブログ記事</li>
+                <li>ここにブログ記事</li>
+                <li>ここにブログ記事</li>
             </ul>
             <button>
-                <span>事例をもっと見る</span>
+                <a>事例をもっと見る</a>
             </button>
         </div>
     </section>
 
 
     <section id="service3">
+        <div class="img">
+            <img src="./images/lp/price-bg.png" alt="">
+        </div>
         <div class="wrapper">
             <h3>料金プラン</h3>
-            <div>
-                <?php the_meta(); ?>
+            <div class="plan">
+                <ul>
+                    <li><?php the_field('Price1_title'); ?></li>
+                    <li><?php the_field('Price1_text'); ?></li>
+                    <li>
+                        <span><?php the_field('Price1_plan1'); ?></span>
+                        <span><?php the_field('Price1_price1'); ?></span>
+                    </li>
+                    <li>
+                        <span><?php the_field('Price1_plan2'); ?></span>
+                        <span><?php the_field('Price1_price2'); ?></span>
+                    </li>
+                    <li>
+                        <span><?php the_field('Price1_plan3'); ?></span>
+                        <span><?php the_field('Price1_price3'); ?></span>
+                    </li>
+                </ul>
+                <ul>
+                    <li><?php the_field('Price2_title'); ?></li>
+                    <li><?php the_field('Price2_text'); ?></li>
+                    <li>
+                        <span><?php the_field('Price2_plan1'); ?></span>
+                        <span><?php the_field('Price2_price1'); ?></span>
+                    </li>
+                    <li>
+                        <span><?php the_field('Price2_plan2'); ?></span>
+                        <span><?php the_field('Price2_price2'); ?></span>
+                    </li>
+                </ul>
             </div>
             <button>
                 <span>トレーニングお申込み</span>
