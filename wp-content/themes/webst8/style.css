@@ -20,6 +20,99 @@ footer p{
 }
 
 
+
+/*■header のCSS*/
+/* ヘッダー */
+.navbar-default {
+    background-color: black!important;
+    color: #fff;
+    font-weight: bold;
+}
+.navbar:before{
+    content: none;
+}
+
+header {
+    height: 90px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+header .wrapper{
+    display: flex;
+}
+header img{
+    margin: auto 0;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.header-nav li:nth-child(2){
+    position: relative;
+}
+header img{
+    width: auto;
+    height: 40px;
+    vertical-align: middle;
+}
+header nav{
+    margin-left: auto;
+}
+header a{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+header .nav{
+    height: 90px;
+    padding: 35px 37px;
+}
+.sub{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.sub li{
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 0;
+}
+.sub a{
+    font-size: 1.3rem;
+}
+header .button{
+    position: relative;
+    width: 242px;
+}
+header .button::before{
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #EC5E1E 0%, #D1163C 100%);
+    transform: skewX(-25deg);
+    padding: 45px 100px;
+    z-index: -1;
+}
+header .button a{
+    padding-top: 34px;
+    display: block;
+    height: 100%;
+}
+
+
+
+
+
 /*■index のCSS*/
 /*ファーストビュー*/
 .top-cover {
@@ -63,14 +156,14 @@ a.categories {
 }
 #latest{
     display: flex;
-/*    width: calc(100% / 3 * 2  - 1%) ;*/
-    width: 60%;
+    width: calc(100% / 3 * 2  - 1%) ;
+/*    width: 60%;*/
 }
 #sidebar{
     text-align: center;
-/*    width: calc(100% / 3 - 1%) ;*/
-/*    margin-left: 0.5%;*/
-    width: 20%;
+    width: calc(100% / 3 - 1%) ;
+    margin-left: 0.5%;
+/*    width: 20%;*/
 }
 
 /*最新記事（id="latest"）*/
@@ -102,8 +195,7 @@ a.categories {
 
 .wrapper-latest {
     position: relative;
-    width: 100%;
-    
+    width: 100%; 
 }
 .wrapper-latest:before {
     content:"";

@@ -5,12 +5,15 @@
 	<title>ウェブストエイト</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sanitize.css">
 
-	<?php wp_enqueue_script('jquery'); ?><!-- wordpress標準のjqueryを使用するための記述 -->
+
+	<?php wp_enqueue_script('jquery'); ?> <!--wordpress標準のjqueryを使用するための記述 -->
 	<!-- bootstrapに名前を付けてjQueryの後にbootstrapを読み込む -->
 	<?php wp_enqueue_script('bootstrap-js','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',array('jquery')); ?>
+    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sanitize.css">
+    
 	<?php wp_head(); ?><!-- header.phpの</head>直前に入れる。これを忘れるとプラグインが動かない -->
 
 
@@ -36,6 +39,9 @@
 			wp_nav_menu($args);
 			?>
 		  </div>
+        <div class="button white">
+            <a href="">トレーニングを申し込む</a>
+        </div>
 		</nav>
 	</header>
 	
